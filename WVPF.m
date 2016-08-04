@@ -1,5 +1,8 @@
 clear all
 %This is the original matlab code of WVPF
+%The code is edit by Dingyi Cheng 
+%Key Laboratory of Power System Intelligent Dispatch and Control of Ministry of Education (Shandong University)
+%Jinan, 250061 China. 
 %%
 %DATA
 [FileName,PathName] = uigetfile('*.xls*;*.lvm','OPEN EXCEL FILE');
@@ -120,7 +123,7 @@ for i=2:l-M_min+1
     t_c=toc;
     t_consumption=[t_consumption,t_c];
 end
-%²¹³ä
+%Â²Â¹Â³Ã¤
 for i=l-M_min+2:l
     C(i)=C(l-M_min+1);K(i)=K(l-M_min+1);alpha(i)=alpha(l-M_min+1);
 end
